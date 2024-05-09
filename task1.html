@@ -1,0 +1,219 @@
+<html>
+  <head>
+    <style>
+      #body {
+        top: 25%;
+        left: 40%;
+        border: 4px solid black;
+        width: 350px;
+        height: 600px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px green;
+      }
+      div {
+        width: 400px;
+        height: 200px;
+        position: relative;
+        margin-top: 50px;
+        margin-left: 25px;
+        
+        
+      }
+      img{
+        
+        margin-top: -35px;
+        
+        
+        
+      }
+      h3{
+        margin-left: 60px;
+      }
+
+      #first-music {
+        width: 15px;
+        height: 40px;
+        animation-name: example;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        background-color: rgb(212, 0, 255);
+        position: absolute;
+        bottom: 0;
+        border-radius: 50px;
+        margin-left: 10px;
+        
+      }
+      @keyframes example {
+        from {
+          height: 0px;
+        }
+        to {
+          height: 200px;
+        }
+      }
+
+      #second_music {
+        width: 15px;
+        height: 40px;
+        animation-name: example1;
+        animation-duration: 0.9s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        background-color: rgb(0, 255, 170);
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        margin-left: 10px;
+        border-radius: 20px;
+      }
+      @keyframes example1 {
+        from {
+          height: 0px;
+        }
+        to {
+          height: 170px;
+        }
+      }
+      #third_music {
+        width: 15px;
+        height: 40px;
+        animation-name: third;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        background-color: rgb(187, 255, 0);
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        margin-left: 12px;
+        border-radius: 20px;
+      }
+      @keyframes third {
+        from {
+          height: 0px;
+        }
+        to {
+          height: 150px;
+        }
+      }
+
+      #fourth_music {
+        width: 14px;
+        height: 60px;
+        animation-name: fourth;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        background-color: rgba(255, 0, 111, 0.877);
+        position: absolute;
+        bottom: 50%;
+        left: 55px;
+        margin-left: 20px;
+        border-radius: 20px;
+      }
+      @keyframes fourth {
+        from {
+          transform: translateY(30px);
+        }
+        to {
+          transform: translateY(-30px);
+        }
+      }
+      #fith_music {
+        width: 14px;
+        height: 40px;
+        animation-name: fith;
+        animation-duration: 0.6s;
+        animation-iteration-count: infinite;
+        background-color: rgba(255, 0, 234, 0.749);
+        position: absolute;
+        bottom: 50%;
+        left: 80px;
+        margin-left: 15px;
+        border-radius: 20px;
+      }
+      @keyframes fith {
+        from {
+          transform: translateY(-30px);
+        }
+        to {
+          transform: translateY(30px);
+        }
+      }
+
+      #sixth_music {
+        width: 14px;
+        height: 40px;
+        animation-name: sixth;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        background-color: rgba(47, 0, 255, 0.281);
+        position: absolute;
+        bottom: 50%;
+        left: 100px;
+        margin-left: 15px;
+        border-radius: 20px;
+      }
+      @keyframes sixth {
+        from {
+          transform: translateY(20px);
+        }
+        to {
+          transform: translateY(-20px);
+        }
+      }
+      #siventh_music {
+        width: 14px;
+        height: 40px;
+        animation-name: siventh;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        background-color: rgba(255, 183, 0, 0.923);
+        position: absolute;
+        bottom: 50%;
+        left: 120px;
+        margin-left: 15px;
+        border-radius: 20px;
+      }
+      @keyframes siventh {
+        from {
+          transform: translateY(-20px);
+        }
+        to {
+         transform: translateY(20px);
+        }
+      }
+      audio {
+        width: 200px;
+        height: 50px;
+        margin-top: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="body">
+      <div>
+        <img
+          src="https://www.naasongs.co/wp-content/uploads/2024/03/Game-Changer-2024-Jaragandi-1.jpg"
+          width="300px"
+          height="200px"
+        />
+        <h3>Game changer</h3>
+      </div>
+
+      <div>
+        <div id="first-music"></div>
+        <div id="second_music"></div>
+        <div id="third_music"></div>
+        <div id="fourth_music"></div>
+        <div id="fith_music"></div>
+        <div id="sixth_music"></div>
+        <div id="siventh_music"></div>
+      </div>
+      <div>
+        <audio controls muted autoplay>
+          <source src="./[iSongs.info] 01 - Jaragandi.mp3" />
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
